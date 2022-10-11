@@ -97,7 +97,7 @@ namespace OlympicGamesChristensen.Models
                     CountryId = 8,
                     CountryName = "China",
                     GameID = "sum",
-                    CategoryID = "out",
+                    CategoryID = "in",
                     Sport = "Diving",
                     FlagImage = "China.png"
                 },
@@ -106,7 +106,8 @@ namespace OlympicGamesChristensen.Models
                     CountryId = 9,
                     CountryName = "Mexico",
                     GameID = "sum",
-                    CategoryID = "out",
+                    CategoryID = "in",
+                    Sport = "Diving",
                     FlagImage = "Mexico.png"
                 },
                 new Country
