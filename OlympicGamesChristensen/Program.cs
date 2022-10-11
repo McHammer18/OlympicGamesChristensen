@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using OlympicGamesChristensen.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<CountryContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CountryContext")));
 
 var app = builder.Build();
 
