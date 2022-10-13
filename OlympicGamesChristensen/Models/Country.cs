@@ -6,7 +6,6 @@ namespace OlympicGamesChristensen.Models
     public class Country
     {
         [Key]
-        public int ID { get; set; }
         public string CountryId { get; set; }
         public string CountryName { get; set; }
 
