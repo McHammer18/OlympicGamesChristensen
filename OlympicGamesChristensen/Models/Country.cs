@@ -1,10 +1,13 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace OlympicGamesChristensen.Models
 {
     public class Country
     {
-        public int CountryId { get; set; }
+        [Key]
+        public int ID { get; set; }
+        public string CountryId { get; set; }
         public string CountryName { get; set; }
 
         public string GameID { get; set; }

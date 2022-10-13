@@ -1,6 +1,6 @@
 ﻿namespace OlympicGamesChristensen.Models
 {
-    public class CountryListViewModel
+    public class CountryListViewModel : CountryViewModel
     {
         public List<Country> Countries { get; set; }
         public string ActiveGame { get; set; }

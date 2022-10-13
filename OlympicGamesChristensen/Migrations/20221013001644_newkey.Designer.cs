@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OlympicGamesChristensen.Models;
 
@@ -10,9 +11,10 @@ using OlympicGamesChristensen.Models;
 namespace OlympicGamesChristensen.Migrations
 {
     [DbContext(typeof(CountryContext))]
-    partial class CountryContextModelSnapshot : ModelSnapshot
+    [Migration("20221013001644_newkey")]
+    partial class newkey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,19 +51,12 @@ namespace OlympicGamesChristensen.Migrations
 
             modelBuilder.Entity("OlympicGamesChristensen.Models.Country", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+                    b.Property<string>("CountryId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CategoryID")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("CountryId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CountryName")
                         .IsRequired()
@@ -79,7 +74,7 @@ namespace OlympicGamesChristensen.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("CountryId");
 
                     b.HasIndex("CategoryID");
 
@@ -90,9 +85,8 @@ namespace OlympicGamesChristensen.Migrations
                     b.HasData(
                         new
                         {
-                            ID = 1,
-                            CategoryID = "in",
                             CountryId = "swd",
+                            CategoryID = "in",
                             CountryName = "Sweden",
                             FlagImage = "Sweden.png",
                             GameID = "win",
@@ -100,9 +94,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 2,
-                            CategoryID = "in",
                             CountryId = "cnd",
+                            CategoryID = "in",
                             CountryName = "Canada",
                             FlagImage = "Canada.png",
                             GameID = "win",
@@ -110,9 +103,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 3,
-                            CategoryID = "in",
                             CountryId = "gbt",
+                            CategoryID = "in",
                             CountryName = "Great Britain",
                             FlagImage = "GreatBritain.png",
                             GameID = "win",
@@ -120,9 +112,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 4,
-                            CategoryID = "out",
                             CountryId = "jam",
+                            CategoryID = "out",
                             CountryName = "Jamaica",
                             FlagImage = "Jamaica.png",
                             GameID = "win",
@@ -130,9 +121,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 5,
-                            CategoryID = "out",
                             CountryId = "ity",
+                            CategoryID = "out",
                             CountryName = "Italy",
                             FlagImage = "Italy.png",
                             GameID = "win",
@@ -140,9 +130,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 6,
-                            CategoryID = "out",
                             CountryId = "jap",
+                            CategoryID = "out",
                             CountryName = "Japan",
                             FlagImage = "Japan.png",
                             GameID = "win",
@@ -150,9 +139,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 7,
-                            CategoryID = "in",
                             CountryId = "gem",
+                            CategoryID = "in",
                             CountryName = "Germany",
                             FlagImage = "Germany.png",
                             GameID = "sum",
@@ -160,9 +148,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 8,
-                            CategoryID = "in",
                             CountryId = "cin",
+                            CategoryID = "in",
                             CountryName = "China",
                             FlagImage = "China.png",
                             GameID = "sum",
@@ -170,9 +157,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 9,
-                            CategoryID = "in",
                             CountryId = "mex",
+                            CategoryID = "in",
                             CountryName = "Mexico",
                             FlagImage = "Mexico.png",
                             GameID = "sum",
@@ -180,9 +166,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 10,
-                            CategoryID = "out",
                             CountryId = "baz",
+                            CategoryID = "out",
                             CountryName = "Brazil",
                             FlagImage = "Brazil.png",
                             GameID = "sum",
@@ -190,9 +175,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 11,
-                            CategoryID = "out",
                             CountryId = "net",
+                            CategoryID = "out",
                             CountryName = "Netherlands",
                             FlagImage = "Netherlands.png",
                             GameID = "sum",
@@ -200,9 +184,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 12,
-                            CategoryID = "out",
                             CountryId = "usa",
+                            CategoryID = "out",
                             CountryName = "USA",
                             FlagImage = "USA.png",
                             GameID = "sum",
@@ -210,9 +193,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 13,
-                            CategoryID = "in",
                             CountryId = "tai",
+                            CategoryID = "in",
                             CountryName = "Thailand",
                             FlagImage = "Thailand.png",
                             GameID = "par",
@@ -220,9 +202,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 14,
-                            CategoryID = "in",
                             CountryId = "urg",
+                            CategoryID = "in",
                             CountryName = "Uruguay",
                             FlagImage = "Uruguay.png",
                             GameID = "par",
@@ -230,9 +211,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 15,
-                            CategoryID = "in",
                             CountryId = "ukr",
+                            CategoryID = "in",
                             CountryName = "Ukraine",
                             FlagImage = "Ukraine.png",
                             GameID = "par",
@@ -240,9 +220,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 16,
-                            CategoryID = "out",
                             CountryId = "aus",
+                            CategoryID = "out",
                             CountryName = "Austria",
                             FlagImage = "Austria.png",
                             GameID = "par",
@@ -250,9 +229,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 17,
-                            CategoryID = "out",
                             CountryId = "pak",
+                            CategoryID = "out",
                             CountryName = "Pakistan",
                             FlagImage = "Pakistan.png",
                             GameID = "par",
@@ -260,9 +238,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 18,
-                            CategoryID = "out",
                             CountryId = "zim",
+                            CategoryID = "out",
                             CountryName = "Zimbabwe",
                             FlagImage = "Zimbabwe.png",
                             GameID = "par",
@@ -270,9 +247,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 19,
-                            CategoryID = "in",
                             CountryId = "fan",
+                            CategoryID = "in",
                             CountryName = "France",
                             FlagImage = "France.png",
                             GameID = "yth",
@@ -280,9 +256,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 20,
-                            CategoryID = "in",
                             CountryId = "cyp",
+                            CategoryID = "in",
                             CountryName = "Cyprus",
                             FlagImage = "Cyprus.png",
                             GameID = "yth",
@@ -290,9 +265,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 21,
-                            CategoryID = "out",
                             CountryId = "rus",
+                            CategoryID = "out",
                             CountryName = "Russia",
                             FlagImage = "Russia.png",
                             GameID = "yth",
@@ -300,9 +274,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 22,
-                            CategoryID = "out",
                             CountryId = "fin",
+                            CategoryID = "out",
                             CountryName = "Finland",
                             FlagImage = "Finland.png",
                             GameID = "yth",
@@ -310,9 +283,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 23,
-                            CategoryID = "out",
                             CountryId = "slo",
+                            CategoryID = "out",
                             CountryName = "Slovakia",
                             FlagImage = "Slovakia.png",
                             GameID = "yth",
@@ -320,9 +292,8 @@ namespace OlympicGamesChristensen.Migrations
                         },
                         new
                         {
-                            ID = 24,
-                            CategoryID = "out",
                             CountryId = "por",
+                            CategoryID = "out",
                             CountryName = "Portugal",
                             FlagImage = "Portugal.png",
                             GameID = "yth",

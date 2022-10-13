@@ -31,7 +31,8 @@ namespace OlympicGamesChristensen.Models
             modelBuilder.Entity<Country>().HasData(
                 new Country
                 {
-                    CountryId = 1,
+                    ID = 1,
+                    CountryId = "swd",
                     CountryName = "Sweden",
                     GameID = "win",
                     CategoryID = "in",
@@ -40,7 +41,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 2,
+                    ID = 2,
+                    CountryId = "cnd",
                     CountryName = "Canada",
                     GameID = "win",
                     CategoryID = "in",
@@ -49,7 +51,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 3,
+                    ID = 3,
+                    CountryId = "gbt",
                     CountryName = "Great Britain",
                     GameID = "win",
                     CategoryID = "in",
@@ -58,7 +61,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 4,
+                    ID = 4,
+                    CountryId = "jam",
                     CountryName = "Jamaica",
                     GameID = "win",
                     CategoryID = "out",
@@ -67,7 +71,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 5,
+                    ID = 5,
+                    CountryId = "ity",
                     CountryName = "Italy",
                     GameID = "win",
                     CategoryID = "out",
@@ -76,7 +81,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 6,
+                    ID = 6,
+                    CountryId = "jap",
                     CountryName = "Japan",
                     GameID = "win",
                     CategoryID = "out",
@@ -85,7 +91,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 7,
+                    ID = 7,
+                    CountryId = "gem",
                     CountryName = "Germany",
                     GameID = "sum",
                     CategoryID = "in",
@@ -94,7 +101,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 8,
+                    ID = 8,
+                    CountryId = "cin",
                     CountryName = "China",
                     GameID = "sum",
                     CategoryID = "in",
@@ -103,7 +111,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 9,
+                    ID = 9,
+                    CountryId = "mex",
                     CountryName = "Mexico",
                     GameID = "sum",
                     CategoryID = "in",
@@ -112,7 +121,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 10,
+                    ID = 10,
+                    CountryId = "baz",
                     CountryName = "Brazil",
                     GameID = "sum",
                     CategoryID = "out",
@@ -121,7 +131,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 11,
+                    ID = 11,
+                    CountryId = "net",
                     CountryName = "Netherlands",
                     GameID = "sum",
                     CategoryID = "out",
@@ -130,7 +141,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 12,
+                    ID = 12,
+                    CountryId = "usa",
                     CountryName = "USA",
                     GameID = "sum",
                     CategoryID = "out",
@@ -139,7 +151,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 13,
+                    ID = 13,
+                    CountryId = "tai",
                     CountryName = "Thailand",
                     GameID = "par",
                     CategoryID = "in",
@@ -148,7 +161,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 14,
+                    ID = 14,
+                    CountryId = "urg",
                     CountryName = "Uruguay",
                     GameID = "par",
                     CategoryID = "in",
@@ -157,7 +171,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 15,
+                    ID = 15,
+                    CountryId = "ukr",
                     CountryName = "Ukraine",
                     GameID = "par",
                     CategoryID = "in",
@@ -166,7 +181,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 16,
+                    ID = 16,
+                    CountryId = "aus",
                     CountryName = "Austria",
                     GameID = "par",
                     CategoryID = "out",
@@ -175,7 +191,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 17,
+                    ID = 17,
+                    CountryId = "pak",
                     CountryName = "Pakistan",
                     GameID = "par",
                     CategoryID = "out",
@@ -184,7 +201,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 18,
+                    ID = 18,
+                    CountryId = "zim",
                     CountryName = "Zimbabwe",
                     GameID = "par",
                     CategoryID = "out",
@@ -193,7 +211,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 19,
+                    ID = 19,
+                    CountryId = "fan",
                     CountryName = "France",
                     GameID = "yth",
                     CategoryID = "in",
@@ -202,7 +221,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 20,
+                    ID = 20,
+                    CountryId = "cyp",
                     CountryName = "Cyprus",
                     GameID = "yth",
                     CategoryID = "in",
@@ -211,7 +231,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 21,
+                    ID = 21,
+                    CountryId = "rus",
                     CountryName = "Russia",
                     GameID = "yth",
                     CategoryID = "out",
@@ -220,7 +241,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 22,
+                    ID = 22,
+                    CountryId = "fin",
                     CountryName = "Finland",
                     GameID = "yth",
                     CategoryID = "out",
@@ -229,7 +251,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 23,
+                    ID = 23,
+                    CountryId = "slo",
                     CountryName = "Slovakia",
                     GameID = "yth",
                     CategoryID = "out",
@@ -238,7 +261,8 @@ namespace OlympicGamesChristensen.Models
                 },
                 new Country
                 {
-                    CountryId = 24,
+                    ID = 24,
+                    CountryId = "por",
                     CountryName = "Portugal",
                     GameID = "yth",
                     CategoryID = "out",
