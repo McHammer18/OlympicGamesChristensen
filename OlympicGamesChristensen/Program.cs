@@ -4,7 +4,10 @@ using OlympicGamesChristensen.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
+
 
 builder.Services.AddDbContext<CountryContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CountryContext")));
@@ -21,6 +24,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseSession();
 
 app.UseRouting();
 
